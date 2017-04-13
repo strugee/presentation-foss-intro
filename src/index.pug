@@ -15,64 +15,162 @@ html
 				h1 Intro to free software/open source
 
 			section
-				h2 Images
-				img(src="images/bespoke-logo.jpg")
+				h2 Hi
+				h3 AJ, Winter 2 batch
+				h3 #[a(href='https://strugee.net/blog/2017/02/how-i-passed-2k-github-contributions') Serial FOSS contributor]
+				h3 FOSS (co)maintainer of several projects
 
 			section
-				h2 Keyboard Interaction
-				h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
+				h2 Today
+				h3 Picking a project
+				h3 Filing good issues
+				h3 Finding an issue to contribute commits to
+				h3 Getting help along the way
+				h3 Sending a Pull Request
 
 			section
-				h2 Touch Interaction
-				h3 Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
+				h2 Picking a project
+				h3 Ideally something you already want to do (bugfix in a library you use, etc.)
+				h3 #[a(href='https://openhatch.org') OpenHatch]
+				h3 #[a(href='https://twitter.com/yourfirstpr') @yourfirstpr]
+				h3 Ultimately, something you're passionate about
 
 			section
-				h2 Responsive Slides
-				h3 Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
+				h2 Easy way to contribute: filing good issues
+				h3 Step 1: search for duplicates
+				h3 Check open and closed issues
+				h3 Use multiple keywords
+				h3 Search mailing list/chat archives if the project has them
+				h3 Don't add +1s
 
 			section
-				h2 Bullet List
-				h3 Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
-				ul.build.build-items
-					li Bullet 1
-					li Bullet 2
-					li Bullet 3
+				h2 The issue itself
+				h3 Be really precise
+				h3 Bugs: version numbers, logs, everything you can think of
+				h3 Steps to reproduce & what you expected to happen and what actually happened
+				h3 Features: precise description of the feature and the problem
+				h3 What kind of bug report would #[em you] like to receive?
 
 			section
-				iframe(width="640", height="360", src="https://www.youtube.com/embed/AV3kYPutYfs?rel=0&amp;showinfo=0&amp;controls=0&amp;enablejsapi=1&amp;loop=1&amp;playlist=AV3kYPutYfs", frameborder="0", allowfullscreen, data-volume="0")
+				h2 Shared history
+				h3 Projects have a shared history
+				h3 Composed of issues, emails, chat messages, git commits, PRs
+				h3 By contributing to a project you're adding to that history
+				h3 "Can you rewrite your commit message to follow conventions?"
+				h3 Why we record all discussions, try to make issues useful for future readers, etc.
 
 			section
-				h2 Syntax Highlighting
-				h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/PrismJS/prism">Prism</a>
-				pre
-					code.language-javascript.
-						(function() {
-							function hanoi(n, a, b, c) {
-								return n ? hanoi(n - 1, a, c, b)
-										.concat([[a, b]])
-										.concat(hanoi(n - 1, c, b, a)) : [];
-							}
-							return hanoi(3, 'left', 'right', 'mid')
-								.map(function(d) {
-									return d[0] + ' -> ' + d[1];
-								});
-						})();
+				h2 Finding an issue
+				h3 Look for "good first pr", "bite sized", "good first bug", "up for grabs", "first timers only"
+				h3 Doesn't have to be code
+				h3 Documentation is great too
+				h3 Comment in the issue ("I'm working on this")
 
-			section(data-bespoke-hash='named-route')
-				h2 Named Route
-				h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
-				p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
 			section
-				h2.bullet Just the beginning…
-				br
-				ul.build.build-items
-					li Edit <a href="http://jade-lang.com/">Pug (formerly Jade)</a> markup in <em>'src/index.pug'</em>
-					li Edit <a href="http://stylus-lang.com/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
-					li Edit JavaScript in <em>'src/scripts/main.js'</em>
-				br
-				ul.build
-					li
-						strong Enjoy! :)
-						a(href='http://twitter.com/markdalgleish')  -@markdalgleish
+				h2 Prepare
+				h3 Fork the project
+				h3 #[code git clone &lt;your fork>]
+				h3 Get set up - #[code CONTRIBUTING.md], #[code README.md]
+
+			section
+				h2 Fix the bug
+				h3 #[code git checkout -b fix-some-bug]
+				h3 Edit/debug/write tests/etc.
+				h3 #[code git add]
+				h3 #[code git commit]
+				h3 #[code git push --set-upstream origin fix-some-bug]
+
+			section
+				h2 Getting help
+				h3 Chat (IRC) - project's IRC channel should be listed
+				h3 Probably on Freenode - just use #[a(href='https://webchat.freenode.net/') webchat.freenode.net]
+				h3 Type the channel name (including the #)
+				h3 Don't "auth to services"
+				h3 Don't say "can I ask a question?" - just ask!
+				h3 No, really
+
+			section
+				h2 Alternatives
+				h3 Try a mailing list
+				h3 Send a work-in-progress Pull Request
+
+			section
+				h2 Sending a Pull Request
+				h3 Visit your fork on GitHub
+				h3 "You recently pushed branches"
+				h3 Click "Compare and Pull Request"
+				h3 Edit PR text if you want
+				h3 If work-in-progress: prefix title with "[WIP]", note "WIP, do not merge" in body, ask your question
+				h3 When you're happy, click "Send Pull Request"!
+
+			section
+				h2 Responding to feedback
+				h3 Status check failures
+				h3 Maintainer feedback
+
+			section
+				h2 Status check failures
+				h3 Found at the bottom of the PR view
+				h3 #[a(href='https://github.com/certbot/certbot/pull/4455') Example]
+				h3 Click "details"
+				h3 Click on the failing test
+				h3 Examine the log
+
+			section
+				h2 Responding to status check failures
+				h3 Are the failures caused by you?
+				h3 Sometimes they aren't
+				h3 But if they are, fix them
+				h3 Create a new commit on the same branch
+				h3 Push - it'll show up in the PR
+
+			section
+				h2 Maintainer feedback
+				h3 Look at inline responses
+				h3 Fix issues, respond to questions
+				h3 Don't be afraid to ask for more explanation if you think the maintainer's wrong
+				h3 (But note that sometimes the answer is "no, because")
+				h3 Add fixes in the same way: commit and push
+
+			section
+				h2 Rinse, repeat
+				h3 Sometimes it takes many cycles
+				h3 Don't be discouraged
+				h3 The maintainer isn't criticizing you
+				h3 They want to help you improve quality
+				h3 Remove <code>[WIP]</code> if you think code is ready for merging
+
+			section
+				h2 Finishing PRs
+				h3 If your PR was merged, great!
+				h3 Zulip > victory stream
+				h3 If it was closed, it's okay
+				h3 Nothing personal
+				h3 Maintainer sees other factors you didn't consider
+				h3 Either way, you did it!
+
+			section
+				h2 Things I didn't cover
+				h3 Nicer IRC setups
+				h3 Sending PRs for things that don't already have an issue
+				h3 Contributing something other than commits
+				h3 CLAs
+
+			section
+				h2 More resources
+				h3 Me
+				h3 #[a(href='https://openhatch.org') OpenHatch]
+				h3 #[a(href='http://producingoss.com/') Producing Open Source Software]
+				h3 #[a(href='https://strugee.net/blog/2017/02/how-i-passed-2k-github-contributions') How I passed 2k GitHub contributions]
+
+			section
+				h2 Thanks!
+
+			section
+				h2 Access this presentation again
+				h3
+					a(href='https://strugee.net/presentation-foss-intro') https://strugee.net/presentation-foss-intro
+				h3 Or get the 
+					a(href='https://github.com/strugee/presentation-foss-intro') source code
 
 		script(src='build/build.js')
