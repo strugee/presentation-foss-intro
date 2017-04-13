@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Intro to free software/open source</title>
+		<link rel="stylesheet" type="text/css" href="build/build.css">
+	</head>
+	<body>
+		<article class="deck">
+			<section>
+				<h1>Intro to free software/open source</h1>
+			</section>
+			<section>
+				<h2>Hi</h2>
+				<h3>AJ, Winter 2 batch</h3>
+				<h3><a href="https://strugee.net/blog/2017/02/how-i-passed-2k-github-contributions">Serial FOSS contributor</a></h3>
+				<h3>FOSS (co)maintainer of several projects</h3>
+			</section>
+			<section>
+				<h2>Today</h2>
+				<h3>Picking a project</h3>
+				<h3>Filing good issues</h3>
+				<h3>Finding an issue to contribute commits to</h3>
+				<h3>Getting help along the way</h3>
+				<h3>Sending a Pull Request</h3>
+			</section>
+			<section>
+				<h2>Picking a project</h2>
+				<h3>Ideally something you already want to do (bugfix in a library you use, etc.)</h3>
+				<h3><a href="https://openhatch.org">OpenHatch</a></h3>
+				<h3><a href="https://twitter.com/yourfirstpr">@yourfirstpr</a></h3>
+				<h3>Ultimately, something you're passionate about</h3>
+			</section>
+			<section>
+				<h2>Easy way to contribute: filing good issues</h2>
+				<h3>Step 1: search for duplicates</h3>
+				<h3>Check open and closed issues</h3>
+				<h3>Use multiple keywords</h3>
+				<h3>Search mailing list/chat archives if the project has them</h3>
+				<h3>Don't add +1s</h3>
+			</section>
+			<section>
+				<h2>The issue itself</h2>
+				<h3>Be really precise</h3>
+				<h3>Bugs: version numbers, logs, everything you can think of</h3>
+				<h3>Steps to reproduce & what you expected to happen and what actually happened</h3>
+				<h3>Features: precise description of the feature and the problem</h3>
+				<h3>What kind of bug report would <em>you</em> like to receive?</h3>
+			</section>
+			<section>
+				<h2>Shared history</h2>
+				<h3>Projects have a shared history</h3>
+				<h3>Composed of issues, emails, chat messages, git commits, PRs</h3>
+				<h3>By contributing to a project you're adding to that history</h3>
+				<h3>"Can you rewrite your commit message to follow conventions?"</h3>
+				<h3>Why we record all discussions, try to make issues useful for future readers, etc.</h3>
+			</section>
+			<section>
+				<h2>Finding an issue</h2>
+				<h3>Look for "good first pr", "bite sized", "good first bug", "up for grabs", "first timers only"</h3>
+				<h3>Doesn't have to be code</h3>
+				<h3>Documentation is great too</h3>
+				<h3>Comment in the issue ("I'm working on this")</h3>
+			</section>
+			<section>
+				<h2>Prepare</h2>
+				<h3>Fork the project</h3>
+				<h3><code>git clone &lt;your fork></code></h3>
+				<h3>Get set up - <code>CONTRIBUTING.md</code>, <code>README.md</code></h3>
+			</section>
+			<section>
+				<h2>Fix the bug</h2>
+				<h3><code>git checkout -b fix-some-bug</code></h3>
+				<h3>Edit/debug/write tests/etc.</h3>
+				<h3><code>git add</code></h3>
+				<h3><code>git commit</code></h3>
+				<h3><code>git push --set-upstream origin fix-some-bug</code></h3>
+			</section>
+			<section>
+				<h2>Getting help</h2>
+				<h3>Chat (IRC) - project's IRC channel should be listed</h3>
+				<h3>Probably on Freenode - just use <a href="https://webchat.freenode.net/">webchat.freenode.net</a></h3>
+				<h3>Type the channel name (including the #)</h3>
+				<h3>Don't "auth to services"</h3>
+				<h3>Don't say "can I ask a question?" - just ask!</h3>
+				<h3>No, really</h3>
+			</section>
+			<section>
+				<h2>Alternatives</h2>
+				<h3>Try a mailing list</h3>
+				<h3>Send a work-in-progress Pull Request</h3>
+			</section>
+			<section>
+				<h2>Sending a Pull Request</h2>
+				<h3>Visit your fork on GitHub</h3>
+				<h3>"You recently pushed branches"</h3>
+				<h3>Click "Compare and Pull Request"</h3>
+				<h3>Edit PR text if you want</h3>
+				<h3>If work-in-progress: prefix title with "[WIP]", note "WIP, do not merge" in body, ask your question</h3>
+				<h3>When you're happy, click "Send Pull Request"!</h3>
+			</section>
+			<section>
+				<h2>Responding to feedback</h2>
+				<h3>Status check failures</h3>
+				<h3>Maintainer feedback</h3>
+			</section>
+			<section>
+				<h2>Status check failures</h2>
+				<h3>Found at the bottom of the PR view</h3>
+				<h3><a href="https://github.com/certbot/certbot/pull/4455">Example</a></h3>
+				<h3>Click "details"</h3>
+				<h3>Click on the failing test</h3>
+				<h3>Examine the log</h3>
+			</section>
+			<section>
+				<h2>Responding to status check failures</h2>
+				<h3>Are the failures caused by you?</h3>
+				<h3>Sometimes they aren't</h3>
+				<h3>But if they are, fix them</h3>
+				<h3>Create a new commit on the same branch</h3>
+				<h3>Push - it'll show up in the PR</h3>
+			</section>
+			<section>
+				<h2>Maintainer feedback</h2>
+				<h3>Look at inline responses</h3>
+				<h3>Fix issues, respond to questions</h3>
+				<h3>Don't be afraid to ask for more explanation if you think the maintainer's wrong</h3>
+				<h3>(But note that sometimes the answer is "no, because")</h3>
+				<h3>Add fixes in the same way: commit and push</h3>
+			</section>
+			<section>
+				<h2>Rinse, repeat</h2>
+				<h3>Sometimes it takes many cycles</h3>
+				<h3>Don't be discouraged</h3>
+				<h3>The maintainer isn't criticizing you</h3>
+				<h3>They want to help you improve quality</h3>
+				<h3>Remove <code>[WIP]</code> if you think code is ready for merging</h3>
+			</section>
+			<section>
+				<h2>Finishing PRs</h2>
+				<h3>If your PR was merged, great!</h3>
+				<h3>Zulip > victory stream</h3>
+				<h3>If it was closed, it's okay</h3>
+				<h3>Nothing personal</h3>
+				<h3>Maintainer sees other factors you didn't consider</h3>
+				<h3>Either way, you did it!</h3>
+			</section>
+			<section>
+				<h2>Things I didn't cover</h2>
+				<h3>Nicer IRC setups</h3>
+				<h3>Sending PRs for things that don't already have an issue</h3>
+				<h3>Contributing something other than commits</h3>
+				<h3>CLAs</h3>
+			</section>
+			<section>
+				<h2>More resources</h2>
+				<h3>Me</h3>
+				<h3><a href="https://openhatch.org">OpenHatch</a></h3>
+				<h3><a href="http://producingoss.com/">Producing Open Source Software</a></h3>
+				<h3><a href="https://strugee.net/blog/2017/02/how-i-passed-2k-github-contributions">How I passed 2k GitHub contributions</a></h3>
+			</section>
+			<section>
+				<h2>Thanks!</h2>
+			</section>
+			<section>
+				<h2>Access this presentation again</h2>
+				<h3><a href="https://strugee.net/presentation-foss-intro">https://strugee.net/presentation-foss-intro</a></h3>
+				<h3>Or get the <a href="https://github.com/strugee/presentation-foss-intro">source code</a></h3>
+			</section>
+		</article>
+		<script src="build/build.js"></script>
+	</body>
+</html>
